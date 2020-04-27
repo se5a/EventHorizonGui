@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NAudio.Wave;
-using NAudio.Wave.SampleProviders;
+//using NAudio.Wave;
+//using NAudio.Wave.SampleProviders;
 
 namespace EventHorizon
 {
+/*
 	class SampleStream : WaveStream
 	{
 		public SampleStream(ISampleProvider sampler, long length)
@@ -44,5 +45,5 @@ namespace EventHorizon
 		{
 			return sampler.Read(buffer, offset, count);
 		}
-	}
+	}*/
 }

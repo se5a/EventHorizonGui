@@ -12,9 +12,9 @@ using System.Diagnostics;
 using System.Reflection;
 using Eggs;
 using EventHorizon.Properties;
-using NAudio;
-using NAudio.Wave;
-using NAudio.Midi;
+//using NAudio;
+//using NAudio.Wave;
+//using NAudio.Midi;
 
 namespace EventHorizon
 {
@@ -32,8 +32,8 @@ namespace EventHorizon
 		private string plrFileName; // e.g. edsj_30_Nick.plr
 
 		// audio stuff
-		private IWavePlayer waveOut;
-		private WaveChannel32 volume;
+		//private IWavePlayer waveOut;
+		//private WaveChannel32 volume;
 
 		public string GameFileName { get; private set; }
 
@@ -125,7 +125,7 @@ namespace EventHorizon
 				dgvBattles.DataSource = universe.Battles;
 
 				dgvEmpires.AutoGenerateColumns = false;
-				foreach (var dir in Directory.GetDirectories(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Shipsets")).Select(dir => Path.GetFileName(dir)).Union(universe.Players.Select(p => p.ShipsetName)))
+				foreach (var dir in Directory.GetDirectories(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "ShipSets")).Select(dir => Path.GetFileName(dir)).Union(universe.Players.Select(p => p.ShipsetName)))
 					colShipset.Items.Add(dir);
 				dgvEmpires.DataSource = universe.Players.ToArray();
 				allShips = SortShipsDefault(universe.Ships).ToArray();
@@ -149,7 +149,7 @@ namespace EventHorizon
 			Settings.Default.Reload();
 
 			// start music if we have any audio devices to play on
-			Music.CurrentMood = Mood.Strategic;
+			//Music.CurrentMood = Mood.Strategic;
 
 			// TODO - make a settings dialog!
 			Settings.Default.Save();
@@ -427,7 +427,9 @@ namespace EventHorizon
 				}
 			}
 			if (e.Cancel)
-				Music.CurrentMood = Mood.Strategic;
+			{
+				//Music.CurrentMood = Mood.Strategic;
+			}
 		}
 
 		private void txtShipName_TextChanged(object sender, EventArgs e)

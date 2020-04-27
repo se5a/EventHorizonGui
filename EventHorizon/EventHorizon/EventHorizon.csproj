@@ -58,15 +58,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Eggs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
-    <Reference Include="NAudio, Version=1.8.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.1.8.4\lib\net35\NAudio.dll</HintPath>
-    </Reference>
-    <Reference Include="NAudio.Vorbis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.Vorbis.1.0.0.0\lib\net35\NAudio.Vorbis.dll</HintPath>
-    </Reference>
-    <Reference Include="NVorbis, Version=0.8.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NVorbis.0.8.4.0\lib\NVorbis.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -128,12 +119,11 @@
     </Compile>
     <None Include="app.config" />
     <None Include="EventHorizon.pdn" />
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Shipsets\Nostic\Ship.svg" />
+    <None Include="ShipSets\Nostic\Ship.svg" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -230,7 +220,7 @@
     <Content Include="fight.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="move.png">
+    <Content Include="Move.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Music\BattleEndDefeat\Place music here.txt">
@@ -257,112 +247,112 @@
     <Content Include="Rules.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Crystalline\Beam.png">
+    <Content Include="ShipSets\Crystalline\Beam.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Crystalline\ConstructionBays.png">
+    <Content Include="ShipSets\Crystalline\ConstructionBays.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Crystalline\Damage.png">
+    <Content Include="ShipSets\Crystalline\Damage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Crystalline\Explosion.png">
+    <Content Include="ShipSets\Crystalline\Explosion.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Crystalline\ShieldFlare.png">
+    <Content Include="ShipSets\Crystalline\ShieldFlare.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Crystalline\ShipCore.png">
+    <Content Include="ShipSets\Crystalline\ShipCore.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Crystalline\Thrusters.png">
+    <Content Include="ShipSets\Crystalline\Thrusters.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Crystalline\Weapons.png">
+    <Content Include="ShipSets\Crystalline\Weapons.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultEnemy\Beam.png">
+    <Content Include="ShipSets\DefaultEnemy\Beam.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultEnemy\ConstructionBays.png">
+    <Content Include="ShipSets\DefaultEnemy\ConstructionBays.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultEnemy\Damage.png">
+    <Content Include="ShipSets\DefaultEnemy\Damage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultEnemy\Explosion.png">
+    <Content Include="ShipSets\DefaultEnemy\Explosion.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultEnemy\ShieldFlare.png">
+    <Content Include="ShipSets\DefaultEnemy\ShieldFlare.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultEnemy\ShipCore.png">
+    <Content Include="ShipSets\DefaultEnemy\ShipCore.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultEnemy\Thrusters.png">
+    <Content Include="ShipSets\DefaultEnemy\Thrusters.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultEnemy\Weapons.png">
+    <Content Include="ShipSets\DefaultEnemy\Weapons.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultFriendly\Beam.png">
+    <Content Include="ShipSets\DefaultFriendly\Beam.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultFriendly\ConstructionBays.png">
+    <Content Include="ShipSets\DefaultFriendly\ConstructionBays.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultFriendly\Damage.png">
+    <Content Include="ShipSets\DefaultFriendly\Damage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultFriendly\Explosion.png">
+    <Content Include="ShipSets\DefaultFriendly\Explosion.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultFriendly\ShieldFlare.png">
+    <Content Include="ShipSets\DefaultFriendly\ShieldFlare.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultFriendly\ShipCore.png">
+    <Content Include="ShipSets\DefaultFriendly\ShipCore.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultFriendly\Thrusters.png">
+    <Content Include="ShipSets\DefaultFriendly\Thrusters.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\DefaultFriendly\Weapons.png">
+    <Content Include="ShipSets\DefaultFriendly\Weapons.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Nostic\Beam.png">
+    <Content Include="ShipSets\Nostic\Beam.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Nostic\ConstructionBays.png">
+    <Content Include="ShipSets\Nostic\ConstructionBays.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Nostic\Damage.png">
+    <Content Include="ShipSets\Nostic\Damage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Nostic\Explosion.png">
+    <Content Include="ShipSets\Nostic\Explosion.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Nostic\ShieldFlare.png">
+    <Content Include="ShipSets\Nostic\ShieldFlare.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Nostic\ShipCore.png">
+    <Content Include="ShipSets\Nostic\ShipCore.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Nostic\Thrusters.png">
+    <Content Include="ShipSets\Nostic\Thrusters.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\Nostic\Weapons.png">
+    <Content Include="ShipSets\Nostic\Weapons.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\SomeOtherSet\ConstructionBays.png">
+    <Content Include="ShipSets\SomeOtherSet\ConstructionBays.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\SomeOtherSet\ShipCore.png">
+    <Content Include="ShipSets\SomeOtherSet\ShipCore.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\SomeOtherSet\Thrusters.png">
+    <Content Include="ShipSets\SomeOtherSet\Thrusters.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Shipsets\SomeOtherSet\Weapons.png">
+    <Content Include="ShipSets\SomeOtherSet\Weapons.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

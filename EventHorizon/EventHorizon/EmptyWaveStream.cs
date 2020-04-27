@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NAudio.Wave;
-
+//using NAudio.Wave;
+/*
 namespace EventHorizon
 {
 	/// <summary>
@@ -38,4 +38,4 @@ namespace EventHorizon
 			return 0;
 		}
 	}
-}
+}*/

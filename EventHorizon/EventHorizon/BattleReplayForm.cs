@@ -85,7 +85,7 @@ namespace EventHorizon
 				lblShield.Visible = false;
 				lblCritical.Visible = false;
 				lblDestroyed.Visible = false;
-				Music.CurrentMood = Battle == null ? Mood.BattleEqual : Battle.GetMoodAfter(round);
+				//Music.CurrentMood = Battle == null ? Mood.BattleEqual : Battle.GetMoodAfter(round);
 			}
 			else
 			{
@@ -126,7 +126,7 @@ namespace EventHorizon
 				lblShield.Text = "Shield Dmg: " + evt.DamageInflicted.Shields;
 				lblCritical.Visible = evt.IsCriticalHit;
 				lblDestroyed.Visible = evt.TargetDestroyed;
-				Music.CurrentMood = Battle.GetMoodAfter(round);
+				//Music.CurrentMood = Battle.GetMoodAfter(round);
 				
 			}
 			lblRound.Text = "Round: " + round + " of " + (Battle == null ? 0 : Battle.Salvos.Count());
@@ -134,7 +134,7 @@ namespace EventHorizon
 
 		private void BattleReplayForm_FormClosed(object sender, FormClosedEventArgs e)
 		{
-			Music.CurrentMood = Mood.Strategic;
+			//Music.CurrentMood = Mood.Strategic;
 		}
 
 		private void BattleReplayForm_Load(object sender, EventArgs e)

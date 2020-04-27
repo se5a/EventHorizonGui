@@ -1,6 +1,6 @@
-﻿using NAudio.Vorbis;
-using NAudio.Wave;
-using NAudio.Wave.SampleProviders;
+﻿//using NAudio.Vorbis;
+//using NAudio.Wave;
+//using NAudio.Wave.SampleProviders;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,6 +12,7 @@ namespace EventHorizon
 	/// <summary>
 	/// Music support for the game.
 	/// </summary>
+	/*
 	public static class Music
 	{
 		static Music()
@@ -156,5 +157,5 @@ namespace EventHorizon
 			public Mood Mood { get; set; }
 			public string Path { get; set; }
 		}
-	}
+	}*/
 }

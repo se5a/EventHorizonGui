@@ -131,6 +131,11 @@ namespace EventHorizon
 						pos += new SizeF(Size.Width / 2f, Size.Height / 2f);
 						pos = new PointF(pos.X + Origin.X, pos.Y + Origin.Y);
 						var sector = Universe.Sectors[realHexCoords.X, realHexCoords.Y];
+						if(sector == null)
+						{
+							Console.WriteLine("Sector: (" + realHexCoords.X + "," + realHexCoords.Y +") is null");
+							continue;
+						}
 						Color fill;
 						bool makePlanet = false;
 						var maxStrength = Math.Max(Universe.MaximumEnemyFleetStrength, Universe.OurMaximumFleetStrength);
@@ -243,6 +248,11 @@ namespace EventHorizon
 						var hexCoords = new Point(xHex, yHex);
 						var realHexCoords = Universe.NormalizeHex(hexCoords);
 						var sector = Universe.Sectors[realHexCoords];
+						if(sector == null)
+						{
+							Console.WriteLine("Sector: (" + realHexCoords.X + "," + realHexCoords.Y + ") is null");
+							continue;
+						}
 						var pos = new PointF(xHex * Zoom, yHex * Zoom).HexToScreen();
 						pos += new SizeF(Size.Width / 2f + Origin.X, Size.Height / 2f + Origin.Y);
 						g.DrawString(sector.DisplayName, new Font(Font.FontFamily, Font.Size * Zoom / 64), Brushes.Black, pos - new SizeF(-Zoom / 64, -Zoom / 64), sf);

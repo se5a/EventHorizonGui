@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NAudio.Wave;
+//using NAudio.Wave;
 
 namespace EventHorizon
 {
@@ -10,6 +10,7 @@ namespace EventHorizon
 	/// Wave stream which loops.
 	/// http://mark-dot-net.blogspot.com/2009/10/looped-playback-in-net-with-naudio.html
 	/// </summary>
+	/*
 	class LoopingWaveStream : WaveStream
 	{
 		public LoopingWaveStream(WaveStream sourceStream)
@@ -69,5 +70,5 @@ namespace EventHorizon
 			if (disposing)
 				sourceStream.Dispose();
 		}
-	}
+	}*/
 }

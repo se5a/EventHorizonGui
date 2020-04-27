@@ -47,7 +47,7 @@ namespace EventHorizon
 
 		private Image TryLoadImage(string filename)
 		{
-			var path = Path.Combine(Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), Path.Combine("Shipsets", Name)), filename);
+			var path = Path.Combine(Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), Path.Combine("ShipSets", Name)), filename);
 			try
 			{
 				return Image.FromFile(path);
