@@ -206,7 +206,7 @@
     <Content Include="Changelogs\1.1.0.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="crown.png">
+    <Content Include="Crown.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Eggs.dll">
@@ -217,7 +217,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="EventHorizon.ico" />
-    <Content Include="fight.png">
+    <Content Include="Fight.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Move.png">

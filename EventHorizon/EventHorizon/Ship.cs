@@ -16,9 +16,9 @@ namespace EventHorizon
 	{
 		public static readonly Bitmap EmptyBitmap = CreatePixel(Color.Transparent);
 		private static readonly string root = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-		public static readonly Bitmap ArmedBitmap = File.Exists(Path.Combine(root, "fight.png")) ? new Bitmap(Path.Combine(root, "fight.png")) : CreatePixel(Color.Red);
-		public static readonly Bitmap MobileBitmap = File.Exists(Path.Combine(root, "move.png")) ? new Bitmap(Path.Combine(root, "move.png")) : CreatePixel(Color.Green);
-		public static readonly Bitmap MothershipBitmap = File.Exists(Path.Combine(root, "crown.png")) ? new Bitmap(Path.Combine(root, "crown.png")) : CreatePixel(Color.Blue);
+		public static readonly Bitmap ArmedBitmap = File.Exists(Path.Combine(root, "Fight.png")) ? new Bitmap(Path.Combine(root, "Fight.png")) : CreatePixel(Color.Red);
+		public static readonly Bitmap MobileBitmap = File.Exists(Path.Combine(root, "Move.png")) ? new Bitmap(Path.Combine(root, "Move.png")) : CreatePixel(Color.Green);
+		public static readonly Bitmap MothershipBitmap = File.Exists(Path.Combine(root, "Crown.png")) ? new Bitmap(Path.Combine(root, "Crown.png")) : CreatePixel(Color.Blue);
 
 		private static Bitmap CreatePixel(Color color)
 		{
